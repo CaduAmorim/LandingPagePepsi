@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Pepsi Co</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" 
+        href="./css/responsive.css"
+        media="screen and (max-width: 991px)"
+    >
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href=""><img src="./img/logoPepsi.png" class="logo" alt="Pepsi Logo"></a>
+            <div class="toggleMenu" onclick="menuToggle()"></div>
+            <ul class="navigation">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">What's New</a></li>
+                <li><a href="">Newsletter</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I like</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae?
+                </p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="./img/pepsi001.png" class="pepsi" alt="Pepsi Lata">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li>
+                <img src="./img/pepsi001.png" alt="Pepsi 1" onclick="imgSlider('./img/pepsi001.png');changeBgColor()">
+            </li>
+            <li>
+                <img src="./img/pepsi002.png" alt="Pepsi 2" onclick="imgSlider('./img/pepsi002.png');changeBgColor()">
+            </li>
+            <li>
+                <img src="./img/pepsi003.png" alt="Pepsi 3" onclick="imgSlider('./img/pepsi003.png');changeBgColor()">
+            </li>
+        </ul>
+        <ul class="sci">
+            <li>
+                <a href="#">
+                    <box-icon type='logo' name='facebook' size="lg" ></box-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <box-icon name='twitter' type='logo' size="lg" ></box-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <box-icon name='instagram' type='logo' size="lg" ></box-icon>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
