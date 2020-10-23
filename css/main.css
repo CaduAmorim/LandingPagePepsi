@@ -124,6 +124,7 @@ header ul li a {
     margin: 0 20px;
     cursor: pointer;
     transition: 0.5s;
+    
 }
 
 .thumb li:hover {
@@ -132,6 +133,17 @@ header ul li a {
 
 .thumb li img {
     max-width: 40px;
+    animation: shadow-pulse 2s infinite;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
+        border-radius: 5%;
+    }
+    100% {
+        box-shadow: 0 0 0 7px rgba(0, 0, 0, 0);
+    }
 }
 
 .sci {
