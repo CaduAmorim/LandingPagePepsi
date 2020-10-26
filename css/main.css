@@ -17,6 +17,7 @@ section {
     align-items: center;
     background: #0062be;
     transition: 0.5s;
+    overflow: hidden;
 }
 
 section .sec {
@@ -36,7 +37,7 @@ header {
 
 header .logo {
     position: relative;
-    max-width: 80px;
+    max-width: 195px;
 }
 
 header ul {
